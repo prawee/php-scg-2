@@ -1,0 +1,5 @@
+How to migration db
+1. cd c:\xampp\htdocs\myproject3
+2. open cmd and then typing follow this
+> php yii
+> php yii migrate

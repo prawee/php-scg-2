@@ -1,0 +1,20 @@
+How to using GIT
+1. cd c:\xampp\htdocs
+2. open cmd then typing
+>  git clone 
+https://github.com/yiisoft/yii2.git 
+myproject2
+
+How to create a project
+Yii2
+- Basic (Web information)
+- Advanced (admin + web information)
+1. cd c:\xampp\htdocs
+2. open cmd then typing
+> php c:\windows\system32\composer.phar 
+> php c:\windows\system32\composer.phar create-project yiisoft/yii2-app-advaned myproject3
+> cd myproject3
+> php init  > typing 0 > yes
+3.open your browser
+http://127.0.0.1/myproject3/frontend/web/
+http://127.0.0.1/myproject3/backend/web/

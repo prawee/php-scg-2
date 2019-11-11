@@ -1,0 +1,5 @@
+Client
+- browser (chrome)
+- editor (vscode)
+- git
+- composer
