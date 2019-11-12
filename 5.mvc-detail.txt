@@ -1,0 +1,8 @@
+Checking first
+1.Open XAMPP (c:\xampp\xampp-control.exe)
+- start web server (Apache)
+- start database ( MySQL)
+2.Open Visual Studio Code
+3.Open your browser and put this
+- localhost/myproject3/frontend/web
+- localhost/myproject3/backend/web

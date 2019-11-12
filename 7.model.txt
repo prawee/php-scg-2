@@ -1,0 +1,28 @@
+1.Define data
+News
+-title (unique)
+-date time (timestamp)
+	12/11/2019 13:00:00
+	2mins ago
+-place
+-detail (text)
+-category (same)
+-photo (1)
+-video (1)
+
+Category
+- Name
+- is_active (true | false)
+
+2.Create Migration
+> php -v
+> php yii
+> php yii migrate/create create_news_table
+> php yii migrate
+3.go to url
+localhost/myproject3/frontend/web
+/index.php?r=gii
+4.extends News model to backend
+5.go to url
+localhost/myproject3/backend/web
+/index.php?r=gii
