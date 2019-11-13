@@ -1,0 +1,26 @@
+picker
+date picker
+
+yii2 + date picker 
+
+How to installation
+method#1 
+> php composer.phar require kartik-v/yii2-widget-datepicker "@dev"
+
+method#2
+"kartik-v/yii2-widget-datepicker": "@dev"  
+> php composer.phar update
+
+Update view  "_form" of News
+
+use kartik\date\DatePicker;
+echo '<b>'.$model->getAttributeLabel('date_time').'</b>';
+    echo DatePicker::widget([
+        'name' => 'date_time', 
+        'value' => date('Y-m-d'),
+        'options' => ['placeholder' => 'Select date ...'],
+        'pluginOptions' => [
+            'format' => 'yyyy-mm-dd',
+            'todayHighlight' => true
+        ]
+    ]);

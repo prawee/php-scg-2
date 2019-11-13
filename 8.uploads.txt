@@ -1,0 +1,11 @@
+if (Yii::$app->request->isPost) {
+   $model->load(Yii::$app->request->post());
+   $file = UploadedFile::getInstance($model, 'photo');
+   $newName = date('Ymdhis').'.'.$file->getExtension();
+   $model->photo = $newName;
+
+   $path = '../../uploads/'.$newName;
+   $file->saveAs($path);
+   $model->save();
+   return $this->redirect(['index']);
+}

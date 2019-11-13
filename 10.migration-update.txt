@@ -1,0 +1,3 @@
+> php yii migrate/create update_news_table
+
+$this->alterColumn('news', 'date_time', $this->string());
