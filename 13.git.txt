@@ -1,0 +1,23 @@
+GIT
+1.register account with github.com
+2.your machine must be install git 
+3.configure
+> git config --global user.email "prawee@hotmail.com" #same github
+> git config --global user.name "Prawee Wongsa"
+4.create repository on github.com
+5.inialial git
+> git init
+> git remote add origin https://github.com/prawee/yii2-scg-example.git
+> git status  #red color
+> git add .
+> git status #red green
+> git commit -m "text"
+> git status #without
+> git push -u origin master
+6.update git
+> git pull
+writing code
+> git add .
+> git commit -m "???"
+> git pull
+> git push

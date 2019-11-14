@@ -1,0 +1,31 @@
+Access Control (Controller)
+- fix on behaviors()
+- rbac #db
+
+RBAC
+1. configure (console/config)
+2. migration
+> php yii migrate --migrationPath=@yii/rbac/migrations
+3. configure (backend/config)
+
+***config on components
+'authManager' => [
+	'class' => 'yii\rbac\DbManager'
+]
+
+4. define
+Table
+News (Item=permission=2)
+1.index (news/index)
+2.create
+3.update
+4.delete
+
+(Item=role=1)
+Manager (1,2,3,4)
+Editor (1,2,3)
+Writer (1,2)
+
+5.usage
+each action on controller can be checking
+Yii::$app->user->can('news/index');

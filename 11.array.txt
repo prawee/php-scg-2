@@ -1,0 +1,9 @@
+$days = ['a', 'b', 'c'];
+
+$days = [
+  'data' => 'a',
+  'info' => 'b',
+  'c' => 'c'
+];
+
+echo $days['info'];

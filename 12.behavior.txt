@@ -1,0 +1,21 @@
+1.open xampp
+- start apache
+- start mysql
+2.open vscode
+3.open browser
+-> localhost/phpmyadmin
+-> localhost/myproject3/backend/web
+
+Behavior
+News
+- created_at (timestamp)
+- updated_at (string)
+- created_by (integer) fk<-user
+- updated_by (integer)
+
+> php yii migrate/create update_news_table_with_date
+
+$this->addColumn('news', 'created_at', $this->timestamp());
+$this->addColumn('news', 'updated_at', $this->string());
+$this->addColumn('news', 'created_by', $this->integer());
+$this->addColumn('news', 'updated_by', $this->integer());
